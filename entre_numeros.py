@@ -13,14 +13,7 @@ else:
     num_max = max(lista)
     num_min1 = min(lista)
     num_min = num_min1 + 1
-    max_rango =  range(num_max)
-    min_rango  = range(num_min)
-
-    max_rango = set(max_rango)
-    min_rango = set(min_rango)
-
-    rango_entre_numero = max_rango - min_rango
-    rango_entre_numero= list(rango_entre_numero)
+    rango_entre_numero = range((num_min), int(num_max))
     cantidad_de_numeros = len(rango_entre_numero)
     print("cantidad de numeros entre {} y {} es: {} " ).format(num_min1,
                                                                num_max,
