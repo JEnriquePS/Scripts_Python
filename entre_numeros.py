@@ -1,6 +1,8 @@
 # -*- coding: utf-8 *-*
 __author__ = 'jenriqueps'
-
+"""introducir dos numeros por teclado. Imprimir los numeros que hay entre ellos
+comenzando por el mas pequeno. Contar cuantos hay y cuantos de ellos son
+pares. Calcular la suma de los pares"""
 numero1 = input("ingrese numero :")
 numero2 = input("ingrese siguiente numero:")
 
