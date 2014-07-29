@@ -29,5 +29,3 @@ def primo(num):
 
 primo(5000)
 
-
-
