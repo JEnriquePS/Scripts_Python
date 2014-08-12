@@ -4,12 +4,23 @@ __author__ = 'jenriqueps'
 """introducir dos numeros por teclado. Imprimir los numeros que hay entre ellos
 comenzando por el mas pequeno. Contar cuantos hay y cuantos de ellos son
 pares. Calcular la suma de los pares"""
-#recibiendo numeros pares
-numero1 = input("ingrese numero :")
-numero2 = input("ingrese siguiente numero:")
+# Recibiendo numeros
 
-lista = [numero1, numero2]
-if numero1 == numero2:
+def enter():
+    "consistenciando funcion"
+    if True:
+        try:
+            numero1 = input("ingrese numero :")
+            numero2 = input("ingrese siguiente numero:")
+            lista =[numero1, numero2]
+            return lista
+        except:
+            print('Error')
+        else:
+            enter()
+lista = enter()
+
+if lista[0] == lista[1]:
     print("Los dos son iguales no hay numeros enteros entre ellos.")
 else:
     num_max = max(lista)    # obteniendo el numero mayor
@@ -35,5 +46,4 @@ else:
     print(numeros_pares)
     print("La cantidad total de pares es: {}").format(len(numeros_pares))
     print("La suma de los numeros pares es: {}").format(suma_pares)
-
 
